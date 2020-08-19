@@ -24,12 +24,15 @@ git clone https://github.com/ryangoliath/service-consumer.git
 ```
 ##
 2. Build (Maven)
+
 Running the following maven build command will generate a jar file called *service-consumer.jar* in a generated *target* directory. 
 ```
 mvn install
 ```
 ##
-3. (Optional) You are welcome to create an *app.properties* file in the directory of the *service-consumer.jar* to configure custom RabbitMQ connection properties. The default properties are:
+3. (Optional) RabbitMQ Connection Properties
+
+You are welcome to create an *app.properties* file in the same directory of the *service-consumer.jar* to configure custom RabbitMQ connection properties. The default properties are:
 ```
 app.rabbit.host: localhost
 app.rabbit.port: 5672
@@ -43,6 +46,7 @@ Example file structure:
 ```
 ##
 4. Run
+
 The maven build would have generated a jar file called *service-consumer.jar* in the *target* directory. Execute the jar using the standard jar exection command:
 ```
 java -jar service-consumer.jar
